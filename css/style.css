@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Comic+Neue&family=Kalam&family=Luckiest+Guy&family=Schoolbell&display=swap');
+
+:root {
+  --activos: tomato;
+  --activos-hover: rgb(207, 38, 8);
+  --cajaUno: rgb(236, 236, 236);
+  --sombraCajaUno: rgba(188, 188, 192, 0.5);
+  --imgShadow: rgb(220, 220, 224);
+  --price: rgb(39, 212, 39);
+  --descripcion: gray;
+  --boton: rgb(91, 120, 207);
+  --textButton: white;
+  --boton-Hover: rgb(65, 96, 189);
+  --sombraHover: rgb(120, 120, 124);
+  --footer: antiquewhite;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+header {
+  margin: 1rem 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin: 5rem auto;
+}
+
+footer {
+  background-color: var(--footer);
+  padding: 0rem 8rem;
+}
+
+.logotype {
+  font-family: 'Schoolbell', cursive;
+  color: var(--activos);
+  padding-left: 1rem;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-menu,
+li {
+  font-family: 'Comic Neue', cursive;
+  font-weight: 600;
+  color: var(--activos);
+  padding: 0px 20px;
+}
+
+.cart {
+  font-size: 1.4rem;
+}
+
+.nav-menu li:hover {
+  color: var(--activos-hover);
+  cursor: pointer;
+  text-shadow: 0 0 2px var(--activos);
+}
+
+.box-one {
+  background-color: var(--cajaUno);
+  padding: 2rem;
+  height: 30rem;
+  width: 25rem;
+  border-radius: 1rem;
+  box-shadow: 1px 0.2px 8px 5px var(--sombraCajaUno);
+}
+
+img {
+  border-radius: 1rem;
+  width: 100%;
+  box-shadow: 0.5px 0px 2px var(--imgShadow);
+}
+
+img:hover {
+  transform: scale(1.13);
+  transition: 1s;
+}
+
+.box-two {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Schoolbell', cursive;
+}
+
+.box-text {
+  width: 50%;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem 0rem 0rem 1rem;
+  font-size: 2em;
+  font-weight: 900;
+  color: var(--price);
+}
+
+.description {
+  position: relative;
+  bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem 0rem 0rem 1rem;
+  color: var(--descripcion);
+  font-size: 1.1em;
+}
+
+.button-pay {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+  padding: 1rem 1rem 0rem 0rem;
+}
+
+button {
+  font-size: large;
+  padding: 0.3rem;
+  background-color: var(--boton);
+  color: var(--textButton);
+  border-radius: 0.4rem;
+  border: 1px solid var(--descripcion);
+  box-shadow: 2px 2px 2px var(--sombraCajaUno);
+}
+
+button:hover {
+  background-color: var(--boton-Hover);
+  box-shadow: 2px 2px 2px var(--sombraHover);
+  cursor: pointer;
+}
+
+.redes {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem 12rem;
+}
+
+a {
+  font-size: 3rem;
+  color: var(--activos);
+}
+
+.fa-brands:hover {
+  font-size: 3rem;
+  color: var(--activos-hover);
+  cursor: pointer;
+  text-shadow: 0 0 10px var(--activos);
+}
+
+.text-foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0rem 1rem;
+  font-family: 'Schoolbell', cursive;
+}
+@media (min-width: 800px) {
+  .hamburgs{
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .categories {
+      display: none;
+  }
+  .offers {
+      display: none;
+  }
+  .fa-bars {
+      font-size: 1.6rem;
+      color: var(--activos);
+  }
+
+  .encabezado {
+      width: 100%;
+  }
+
+  header {
+      padding: 0rem;
+      margin: 1rem;
+  }
+
+  .nav-menu {
+      position: relative;
+      right: 3rem;
+  }
+
+  .redes {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+}
